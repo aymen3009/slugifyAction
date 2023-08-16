@@ -1,7 +1,9 @@
 name: String manupulation
 description: 'manupulate strings in a GitHub action'
 author: 'Aymen Abdellaoui'
-
+branding:
+  icon: archive
+  color: purple
 inputs:
   string:
     description: string input
