@@ -1,0 +1,15 @@
+name: String manupulation
+description: 'manupulate strings in a GitHub action'
+author: 'Aymen Abdellaoui'
+
+inputs:
+  string:
+    description: string input
+    required: true
+    default: 'Hello World!'
+outputs:
+  slug:
+    description: slugified string
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
