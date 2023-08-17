@@ -2858,6 +2858,7 @@ async function run() {
     const slugufiedStr = inputStr.toLowerCase().replace(/[^a-z0-9 -]/g, '') 
                                                .replace(/\s+/g, '-')
                                                .replace(/-+/g, '-');
+    console.log(`The slugified string is: ${slugufiedStr}`);
     core.setOutput("slug", slugufiedStr);
   }
   
