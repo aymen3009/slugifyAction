@@ -9,6 +9,34 @@ inputs:
     description: string input
     required: true
     default: 'Hello World!'
+  prefix:
+    description: A prefix to add to the string
+    required: false
+    default: ''
+  suffix:
+    description: A suffix to add to the string
+    required: false
+    default: ''
+  forcePrefix:
+    description: Force the prefix to be added even if the string already starts with it
+    required: false
+    default: "false"
+  forceSuffix:
+    description: Force the suffix to be added even if the string already ends with it
+    required: false
+    default: "false"
+  slugify:
+    description: Slugify the string
+    required: false
+    default: "true"
+  outputLength:
+    description: The length of the output string (0 for no limit)
+    required: false
+    default: "0"
+  outputCase:
+    description: The case of the output string (lower, upper, capitalize)
+    required: false
+    default: "lower"
 outputs:
   slug:
     description: slugified string
