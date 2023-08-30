@@ -5,4 +5,4 @@ yarn run build
 yarn prettier . --write
 yarn run lint
 yarn run test
-git commit -m "pre-push hook"
+git commit -a -m "pre-push hook"
