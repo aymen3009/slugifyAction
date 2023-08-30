@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 . "$(dirname -- "$0")/_/husky.sh"
 
+yarn run build 
 yarn prettier . --write
 yarn run lint
 yarn run test
-
-yarn run build
-
-git commit -a --amend --no-edit
+git commit -m "pre-push hook"
