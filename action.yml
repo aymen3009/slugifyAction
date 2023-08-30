@@ -1,6 +1,6 @@
 name: String manupulation
-description: 'manupulate strings in a GitHub action'
-author: 'Aymen Abdellaoui'
+description: "manupulate strings in a GitHub action"
+author: "Aymen Abdellaoui"
 branding:
   icon: archive
   color: purple
@@ -8,15 +8,15 @@ inputs:
   string:
     description: string input
     required: true
-    default: 'Hello World!'
+    default: "Hello World!"
   prefix:
     description: A prefix to add to the string
     required: false
-    default: ''
+    default: ""
   suffix:
     description: A suffix to add to the string
     required: false
-    default: ''
+    default: ""
   forcePrefix:
     description: Force the prefix to be added even if the string already starts with it
     required: false
@@ -41,5 +41,5 @@ outputs:
   slug:
     description: slugified string
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
